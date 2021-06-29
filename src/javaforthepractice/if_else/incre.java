@@ -34,7 +34,7 @@ Ask user for their salary and year of service and print the net bonus amount.*/
         int total=sal+bonus;
         System.out.println("your total sal is "+total);
              
-        
+        ////////////hfdhgiuhgiudfihg/////////dfhguid
     }
     else{
         System.out.println("sry bro work hard  you need some experience ;)");
