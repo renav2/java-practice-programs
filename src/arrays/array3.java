@@ -18,12 +18,20 @@ public class array3 {
         System.out.println("enter the  size if the array");
          int a=in.nextInt();
          
-         int arr[]=new int[a+1];
-         for(int i=0;i<arr.length;a++){
+         int arr[]=new int[a];
+         for(int i=0;i<arr.length;i++){
              arr[i]=in.nextInt();
          }
-    
-    
+         
+         int b=in.nextInt();
+         arr[a]=b;
+         
+         for(int j=0;j<=a;j++){
+             System.out.println(arr[j]);
+         }
+       
+                 
+         System.out.println(arr[a]);
     }
     
 }
