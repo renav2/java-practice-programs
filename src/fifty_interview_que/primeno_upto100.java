@@ -4,25 +4,31 @@
  * and open the template in the editor.
  */
 package fifty_interview_que;
-import java.util.*;
 
 /**
  *
  * @author rvkul
  */
-public class reverseno {
+public class primeno_upto100 {
     public static void main(String args[]){
-    Scanner in=new Scanner(System.in);
-        System.out.println("enter the no");
-    int a=in.nextInt();
-    int rev=0,rem=0;
-    while(a!=0){
-    rem=a%10;
-    rev=rev*10+rem;
-    a=a/10;
+    
+    int temp=0;
+    
+    for(int i=1;i<=100;i++){
+       for(int j=2;j<i;j++){
+       if(i%j==0){
+       temp=temp+1;
+       }
+       
+       }
+    if(temp==0){
+        System.out.println(i);
+    }else{
+        System.out.println(temp=0);
+    }
     
     }
-        System.out.println(rev);
+    
     
     }
 }

@@ -4,28 +4,28 @@
  * and open the template in the editor.
  */
 package fifty_interview_que;
-
-import java.util.Scanner;
+import java.util.*;
 
 /**
  *
  * @author rvkul
  */
-public class fibonachi {
+public class fibonachi111 {
     public static void main(String args[]){
     Scanner in=new Scanner(System.in);
-        System.out.println("enter the last no of febonachi series");
-    int a=in.nextInt();
-    int no,prev = 0,next = 1;
-   for(int i=0;i<a;i++){
-   no=prev+next;
-       System.out.println(no);
-   prev=next;
-   next=no;
-   }
-        
-   
-    
+        System.out.println("last no");    
+int a=in.nextInt();
+int next=1,prev=0,no;
+for(int i=0;i<a;i++){
+no=next+prev;
+    System.out.println(no);
+prev=next;
+next=no;
+
+}
+
+
+
     
     }
 }

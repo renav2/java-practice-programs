@@ -10,19 +10,17 @@ import java.util.*;
  *
  * @author rvkul
  */
-public class reverseno {
+public class factorial {
     public static void main(String args[]){
-    Scanner in=new Scanner(System.in);
-        System.out.println("enter the no");
-    int a=in.nextInt();
-    int rev=0,rem=0;
-    while(a!=0){
-    rem=a%10;
-    rev=rev*10+rem;
-    a=a/10;
-    
-    }
-        System.out.println(rev);
-    
+    //factorial
+        Scanner in=new Scanner(System.in);
+        int a=in.nextInt();
+        int temp=1;
+        
+        for(int i=1;i<=a;i++){
+           temp *=i;
+        }
+        System.out.println(temp);
+       
     }
 }
