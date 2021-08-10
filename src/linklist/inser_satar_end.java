@@ -45,6 +45,21 @@ int new_data=in.nextInt();
   
     
     }
+    void last(){
+    Scanner in=new Scanner(System.in);
+        System.out.println("last enter the new data ");        
+int new_data=in.nextInt();
+link new_node=new link(new_data);
+if(head==null){
+head=new_node;
+    System.out.println("");
+
+}link curr=head;
+while(null!=curr.next){
+curr=curr.next;}
+    curr.next=new_node;
+    }
+    
     
     
    public static void main(String args[]){
@@ -58,6 +73,8 @@ int new_data=in.nextInt();
    sec.next=thir;
    obj.show();
    obj.star();
+   obj.show();
+   obj.last();
    obj.show();
    } 
 }
